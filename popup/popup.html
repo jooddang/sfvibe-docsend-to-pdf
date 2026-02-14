@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <h2>SFVibe - Docsend to PDF</h2>
+
+    <div id="not-docsend" class="section hidden">
+      <p>Navigate to a DocSend presentation to use this extension.</p>
+    </div>
+
+    <div id="needs-reload" class="section hidden">
+      <p>This page was loaded before the extension. Reload to activate.</p>
+      <button id="reload-btn" class="btn btn-primary">Reload &amp; Capture</button>
+    </div>
+
+    <div id="ready" class="section hidden">
+      <p>Detected: <strong><span id="total-pages">0</span> pages</strong></p>
+      <button id="start-btn" class="btn btn-primary">Start Capture</button>
+      <button id="resume-btn" class="btn btn-secondary hidden">
+        Resume (<span id="resume-count">0</span>/<span id="resume-total">0</span>)
+      </button>
+      <button id="clear-btn" class="btn btn-danger hidden">Clear Saved</button>
+    </div>
+
+    <div id="capturing" class="section hidden">
+      <p id="status-text">Capturing...</p>
+      <div class="progress-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <p id="progress-text" class="progress-label">Page 0 / 0</p>
+      <button id="stop-btn" class="btn btn-warning">Stop</button>
+    </div>
+
+    <div id="compiling" class="section hidden">
+      <p>Compiling PDF...</p>
+      <div class="progress-container">
+        <div id="compile-progress-bar" class="progress-bar"></div>
+      </div>
+      <p id="compile-text" class="progress-label"></p>
+    </div>
+
+    <div id="done" class="section hidden">
+      <p>PDF downloaded successfully.</p>
+      <button id="new-capture-btn" class="btn btn-primary">New Capture</button>
+    </div>
+
+    <div id="error-section" class="section hidden">
+      <p class="error-text" id="error-text"></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
