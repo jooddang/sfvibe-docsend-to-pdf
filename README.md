@@ -1,5 +1,7 @@
 # SFVibe - Docsend to PDF
 
+https://sfvibe.fun
+
 A Chrome extension that captures DocSend presentations and saves them as PDF files.
 
 DocSend presentations don't allow downloading by default. This extension visually captures each page of a presentation and compiles them into a single PDF that you can save, share, and read offline.
@@ -115,3 +117,8 @@ git clone https://github.com/jooddang/sfvibe-docsend-to-pdf.git
 ## License
 
 MIT
+
+## Tip for Coffee!
+
+EVM: 0x8cacfa4f115c3da0d92ddfa6373eba5a39903ad2
+SOL: edCgnF7MLAs5pMkmfdnm9dNg1VGhfDBvrDWGBHeWd79
